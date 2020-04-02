@@ -24,3 +24,26 @@ e2.place(x=160,y=90)
 #登陆按钮程序
 def usr_quit():
     window.destroy()
+def usr_login():
+    tname=e1.get()
+    tpwd=e2.get()
+    if teacher['admin']=={'name':tname,'pwd':tpwd}:
+        tkinter.messagebox.showinfo(title='登录成功',message='欢迎，教师Admin')
+        window.destroy()
+   
+        def qt():
+            w2.destroy()
+        def search():
+            for i in student.keys():
+                a=student[i]
+                print('姓名:'+' '+i+'  '+'成绩:'+' '+a)
+        def add():
+            n0=tkinter.simpledialog.askstring('提示', '请输入学生姓名',initialvalue='')
+            if n0 in list(student.keys()):
+                tkinter.messagebox.showwarning(title='错误',message='该学生已存在')
+            else:
+                mark=tkinter.simpledialog.askstring('提示','请输入学生成绩',initialvalue='')
+                if float(mark)>=0 and float(mark)<=100:
+                    student[n0]=mark
+                else:
+                    tkinter.messagebox.showwarning(title='提示',message='成绩不在范围内')
