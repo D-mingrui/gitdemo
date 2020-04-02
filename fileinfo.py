@@ -56,6 +56,10 @@ def usr_login():
     
     else:
        tkinter.messagebox.showinfo(title='登录失败',message='用户名或密码错误')
- 
+tk.Button(window,text='登录',command=usr_login).place(x=150,y=130)
+tk.Button(window,text='退出',command=usr_quit).place(x=240,y=130)
+window.mainloop()
+
+infile=open('article.txt','r')
    
     
