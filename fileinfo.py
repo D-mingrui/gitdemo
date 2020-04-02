@@ -21,3 +21,6 @@ var_pwd=tk.StringVar()
 tk.Label(window,text='密码:').place(x=120,y=90)
 e2=tk.Entry(window,textvariable=var_pwd,show='*')#密码输入框
 e2.place(x=160,y=90)
+#登陆按钮程序
+def usr_quit():
+    window.destroy()
