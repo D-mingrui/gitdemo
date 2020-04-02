@@ -61,5 +61,10 @@ tk.Button(window,text='退出',command=usr_quit).place(x=240,y=130)
 window.mainloop()
 
 infile=open('article.txt','r')
-   
-    
+
+
+#我是第二个开发者
+#第一个开发者都把代码复制完了
+#我就写几行注释吧
+#要不没我啥事了
+#哈哈哈哈哈
