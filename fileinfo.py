@@ -47,3 +47,15 @@ def usr_login():
                     student[n0]=mark
                 else:
                     tkinter.messagebox.showwarning(title='提示',message='成绩不在范围内')
+        w2=tk.Tk()
+        w2.geometry('300x300')
+        w2.title('学生管理系统')
+        tk.Button(w2,text='添加成绩',command=add).place(x=120,y=50)
+        tk.Button(w2,text='查看成绩',command=search).place(x=120,y=120)
+        tk.Button(w2,text='退出系统',command=qt).place(x=120,y=190)
+    
+    else:
+       tkinter.messagebox.showinfo(title='登录失败',message='用户名或密码错误')
+ 
+   
+    
